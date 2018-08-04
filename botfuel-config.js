@@ -1,5 +1,5 @@
 module.exports = {
   adapter: {
-    name: 'shell'
+    name: 'botfuel'
   }
 };
