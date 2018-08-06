@@ -1,11 +1,11 @@
 Action
 Adventure
 Animation
-Comedy,funny
+Comedy,funny,with friends
 Crime,criminal
 Documentary
 Drama
-Family
+Family,children
 Fantasy
 History,historical
 Horror
@@ -13,7 +13,7 @@ Music,musical,with songs
 Mystery,mysterical
 Romance,romantic,romantic comedy
 Science Fiction,science,scientific
-TV Movie,tv series,series
+TV Series,tv movie,tv series,series
 Thriller
 War
 Western

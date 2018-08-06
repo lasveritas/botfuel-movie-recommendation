@@ -12,19 +12,7 @@ describe('Test bot answers', () => {
     ]);
     expect(bot.adapter.log).toEqual([
       new UserTextMessage('Hello!'),
-      new BotTextMessage('Hello human!'),
-    ].map(o => o.toJson(userId)));
-  });
-
-  test('Bot greets with name', async () => {
-    const bot = new Bot(config);
-    const { userId } = bot.adapter;
-    await bot.play([
-      new UserTextMessage('My name is Bob'),
-    ]);
-    expect(bot.adapter.log).toEqual([
-      new UserTextMessage('My name is Bob'),
-      new BotTextMessage('Nice to meet you Bob!'),
+      new BotTextMessage('Hello!'),
     ].map(o => o.toJson(userId)));
   });
 
@@ -37,6 +25,18 @@ describe('Test bot answers', () => {
     expect(bot.adapter.log).toEqual([
       new UserTextMessage('Make me a sandwich'),
       new BotTextMessage('Not understood.'),
+    ].map(o => o.toJson(userId)));
+  });
+
+  test('Bot tells, who he is.', async () => {
+    const bot = new Bot(config);
+    const { userId } = bot.adapter;
+    await bot.play([
+      new UserTextMessage('Who are you'),
+    ]);
+    expect(bot.adapter.log).toEqual([
+      new UserTextMessage('Who are you'),
+      new BotTextMessage('I am a movie recommender bot. Just ask me for any genre or an actor, and I will try to recommend you something interesting.'),
     ].map(o => o.toJson(userId)));
   });
 });
