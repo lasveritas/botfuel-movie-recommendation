@@ -1,10 +1,10 @@
 Action
 Adventure
-Animation
+Animation,cartoon
 Comedy,funny,with friends
 Crime,criminal
 Documentary
-Drama
+Drama,dramma
 Family,children
 Fantasy
 History,historical
