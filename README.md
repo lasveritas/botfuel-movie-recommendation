@@ -5,7 +5,7 @@ It uses The Movie Database(https://www.themoviedb.org) API.
 
 The bot can search for a movie by genre, by actor, or both.
 
-###Dialog Example:
+### Dialog Example:
 
 recommend me some drama
 > Choose any Drama movie!
